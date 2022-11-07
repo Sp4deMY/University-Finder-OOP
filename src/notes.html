@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notes</title>
+    <style>
+
+        *, *::after, *::before{
+            border: 0;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body{
+            font-family: 'Poppins',sans-serif;
+            display: grid;
+            place-items: center;
+            padding: 2rem;
+        }
+
+        .logo {
+            float: left;
+            margin-left: 46px;
+            padding: 0px 38px;
+            font-family: 'Raleway', sans-serif;
+            font-size: 25px;
+            font-weight: bold;
+        }
+        
+        .logo a {
+            text-decoration: none;
+            color: black;    
+        }
+        
+        .nav {
+            position: absolute;
+            top: 5%;
+            left: 0;
+            margin: 0;
+            padding: 0;
+            height: 80px;
+            width: 100%;
+            text-decoration: none;
+        }
+        
+        .nav ul {
+            list-style: none;
+            cursor: pointer;   
+            float: right;
+            margin-right: 140px; 
+            text-decoration: none;
+        }
+        
+        .nav ul li {
+    list-style: none;
+    display: inline-block;
+    color: black;
+    font-family: 'Raleway', sans-serif;
+    padding: 15px 15px;
+    font-weight: bold;
+    text-decoration: none;
+}
+        
+        .nav ul li:hover {
+            border-bottom: 3px solid #000000;
+            transition: all .3s ease;
+            text-decoration: none;
+        }
+
+        .takenotes{
+            max-width: 1000px;
+            margin: 1rem auto;
+        }
+
+        .container {
+    position: absolute;
+    margin: auto;
+    text-align: center;
+    left: 40%;
+    top: 15%;
+}
+
+        h1{
+            font-size: 3rem;
+        }
+
+        h3{
+            text-align: center;
+        }
+
+
+.notelist {
+  margin: 2rem auto 1rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-gap: 1.5rem;
+}
+
+form {
+  display: grid;
+  grid-gap: 1rem;
+  margin: 1rem 0;
+  width: 100%;
+}
+  
+  label, input, textarea {
+    font-family: inherit;
+    font-size: inherit;
+  }
+  
+  [for="title"], [for="note"] {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 1rem;
+    grid-gap: 1rem;
+    background-color: white;
+    font-weight: bold;
+  }
+  
+    input {
+      flex: 1 1 80%;
+      border: 3px solid ;
+      padding: .5rem;
+      width: 100%;
+      height: 100%;
+    }
+    
+    .buttonplace{
+        position: absolute;
+        margin: auto;
+        text-align: center;
+        left: 30%;
+        top: 110%;
+    }
+
+    
+
+
+
+
+    </style>
+</head>
+<body>
+
+    <div class="wrapper">
+        <!-- Navigation -->
+        <div class="nav">
+            <div class="logo">
+                <a href="#">
+                    <p>Uni-Portal</p>
+                </a>
+            </div>
+            <ul>
+                <!-- Hyperlink -->
+                <li><a href="landingpage.html" style="text-decoration: none;">Home</a></li>
+                <li><a href="tips.html" style="text-decoration: none;">Tips</a></li>
+                <li><a href="rank.html" style="text-decoration: none;">Top Universities</a></li>
+                <li>Notes</li>
+            </ul>
+    </div>
+
+    <div class="container">
+        <div class="takenote">
+            <h1>Notes</h1>
+            <form>
+                <label for="title">Title
+                    <input type="text" id="fileName" placeholder="Notes Title">
+                </label>
+                <label for="note">Contents
+                    <input type="text" id="fileContents" placeholder="Jot Your Notes Here">
+                </label>
+            </form>
+
+            <div class="buttonplace">
+                <button id="btnCreate" class="btn btn-default">Create</button>
+                <button id="btnRead" class="btn btn-default">Read</button>
+                <button id="btnUpdate" class="btn btn-default">Update</button>
+                <button id="btnDelete" class="btn btn-default">Delete</button>
+            </div>
+                
+        </div>
+    
+        <div class="notelist">
+    
+        </div>
+        
+    </div>
+
+    <script src="main.js"></script>
+
+    
+    
+</body>
+</html>

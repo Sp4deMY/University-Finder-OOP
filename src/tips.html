@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QS University Ranking</title>
+    <style>
+        
+        html {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            text-decoration: none;    
+        }
+        
+        body {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url(bguni.jpg);
+            background-repeat: no-repeat;
+            background-size: auto;
+            display: block;
+            text-decoration: none;
+        }
+        
+        .logo {
+            float: left;
+            margin-left: 46px;
+            padding: 0px 38px;
+            font-family: 'Raleway', sans-serif;
+            font-size: 25px;
+            font-weight: bold;
+        }
+        
+        .logo a {
+            text-decoration: none;
+            color: black;    
+        }
+        
+        .nav {
+            position: absolute;
+            top: 0;
+            left: 0;
+            margin: 0;
+            padding: 0;
+            height: 80px;
+            width: 100%;
+            text-decoration: none;
+        }
+        
+        .nav ul {
+            list-style: none;
+            cursor: pointer;   
+            float: right;
+            margin-right: 140px; 
+            text-decoration: none;
+        }
+        
+        .nav ul li {
+    list-style: none;
+    display: inline-block;
+    color: black;
+    font-family: 'Raleway', sans-serif;
+    padding: 15px 15px;
+    font-weight: bold;
+    text-decoration: none;
+}
+        
+        .nav ul li:hover {
+            border-bottom: 3px solid #000000;
+            transition: all .3s ease;
+            text-decoration: none;
+        }
+
+.title {
+    text-align: center;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.title h3 {
+    color: #35230e;
+    text-align: left;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 37px;
+    width: 150%;
+    text-decoration: underline;
+}
+
+text {
+    width: 205px;
+    height: 40px;
+    border: none;
+    border-radius: 20px;
+    padding-left: 10px;
+    }
+
+.content {
+    text-align: justify;
+    position: absolute;
+    top: 55%;
+    left: 38%;
+    transform: translate(-50%, -50%);
+    
+}
+
+.content h2 {
+    color: #35230e;
+    text-align: left;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 19px;
+    width: 90%;
+    line-height: 1.3;
+}
+
+
+
+.content p {
+    color: black;
+    font-family: 'Poppins', sans-serif;
+    font-size: 19px;
+    text-align: justify;
+    color: #08596a;
+    width: 60%;
+}
+
+.content2 {
+    text-align: justify;
+    position: absolute;
+    top: 105%;
+    left: 70%;
+    transform: translate(-50%, -50%);
+}
+
+.content2 h2 {
+    color: #35230e;
+    text-align: left;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 19px;
+    width: 90%;
+    line-height: 1.3;
+}
+
+
+
+.content2 p {
+    color: black;
+    font-family: 'Poppins', sans-serif;
+    font-size: 19px;
+    text-align: justify;
+    color: #08596a;
+    width: 130%;
+}
+
+.content3 {
+    text-align: justify;
+    position: absolute;
+    top: 135%;
+    bottom: 200%;
+    left: 38%;
+    transform: translate(-50%, -50%);
+    
+}
+
+.content3 h2 {
+    color: #35230e;
+    text-align: left;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 19px;
+    width: 90%;
+    line-height: 1.3;
+}
+
+
+
+.content3 p {
+    color: black;
+    font-family: 'Poppins', sans-serif;
+    font-size: 19px;
+    text-align: justify;
+    color: #08596a;
+    width: 60%;
+}
+
+
+        
+        .col-img {
+            position: absolute;
+            top: 55%;
+            left: 70%;
+            transform: translate(-50%, -50%);
+            width: 57%;
+            text-align: -webkit-right;
+        }
+        
+        .col-img img {
+            width: 70%;
+            
+        }
+        
+        .col-img2 {
+            position: absolute;
+            top: 99%;
+            right: 30%;
+            transform: translate(-50%, -50%);
+            width: 57%;
+            text-align: -webkit-right;
+        }
+        
+        .col-img2 img {
+            width: 45%;
+            
+        }
+
+        .col-img3 {
+            position: absolute;
+            top:160%;
+            left: 62%;
+            transform: translate(-50%, -50%);
+            width: 57%;
+            text-align: -webkit-right;
+        }
+        
+        .col-img3 img {
+            width: 60%;
+            
+        }
+            </style>
+</head>
+<body>
+    <section>
+        <div class="wrapper">
+            <!-- Navigation -->
+            <div class="nav">
+                <div class="logo">
+                    <a href="#">
+                        <p>Uni-Portal</p>
+                    </a>
+                </div>
+                <ul>
+                    <!-- Hyperlink -->
+                    <li><a href="landingpage.html" style="text-decoration: none;">Home</a></li>
+                    <li>Tips</li>
+                    <li><a href="rank.html" style="text-decoration: none;">University Ranking</a></li>
+                    <li><a href="notes.html" style="text-decoration: none;">Notes</a></li>
+                </ul>
+        </div>
+            
+    <!-- Title -->
+        <div class="title">
+            <h3>How to choose University that suits you</h3>
+        </div>
+
+        <div class="col-img">
+            <img src="bguni.jpg" alt="">
+        </div>
+
+    <!-- Tips1 -->
+        <div class="content">
+            <h2>1) Consider the University ranking</h2>
+            <p>Rankings may be considered from that University's research but better rankings somehow determine that the organization itself 
+             use their research to help people. Uni-Portal provides information for World Top Universities too at Top Universities
+        section. Be sure to check it ! One of popuplar organization that list the ranking is QS World University.</p>
+        </div>
+    
+            
+        
+        </section>
+
+        <section>
+    <!-- Tips2 -->
+        <div class="content2">
+            <h2>2) Check the University Website</h2>
+            <p>Almost all universities these days have their own website that includes more useful information you want to know. More often than not, 
+                you’ll find lecturers list, training programs, and timetables on the university website. You’ll also
+                know the exams to take and the required documents before you can enroll in your chosen course.</p>
+        </div>
+
+        <div class="col-img2">
+            <img src="website.jpg" alt="">
+        </div>
+
+        </section>
+
+        <section>
+    <!-- Tips3 -->
+            <div class="content3">
+                <h2>3) Consider Faculty Reputation</h2>
+            <p>There’s no university that’s considered as a world leader in everything. Thus, it stands to reason that various universities 
+                possess unique strengths. For instance, if you like to study politics, it’s not a good idea to choose a university that has 
+                an excellent reputation for medicine. So, make sure to check the faculty’s reputation as you make
+                comparisons of the universities you prefer.Determine your strength and do a bit research. Uni-Portal also provides a little 
+            bit of information about the universities specialty at the 'Top Universities' section.</p>
+            </div>
+
+            <div class="col-img3">
+                <img src="faculty.jpg" alt="">
+            </div>
+        </section>
+
+    
+    
+
+    
+</body>
+</html>
+
+
+
+
+    
